@@ -4,6 +4,8 @@ export const handleCart = (state = cart, action) => {
     const product = action.payLoad;
     switch (action.type) {
         case "addItem":
+            console.log(product)
+
 
             const exist = state.find((x) => x.id === product.id);
             if (exist) {
@@ -15,6 +17,7 @@ export const handleCart = (state = cart, action) => {
                     qty: 1
                 }]
             }
+            break;
 
 
 
@@ -27,6 +30,7 @@ export const handleCart = (state = cart, action) => {
             }
             break;
         default:
+            return state;
             break;
     }
 

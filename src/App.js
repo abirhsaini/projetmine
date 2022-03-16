@@ -8,11 +8,13 @@ import Dinner from "./pages/Dinner";
 import Contact from "./pages/Contact";
 import Order from "./pages/Order";
 
+
 import { CartProvider} from "react-use-cart";
 
 
 import {BrowserRouter ,Switch ,Route} from "react-router-dom";
 import "./style/tout.scss"
+import Cart from "./pages/cart";
 
 
 
@@ -34,6 +36,7 @@ function App() {
       <Route path="/dinner" exact component={Dinner} />
       <Route path="/Contact" exact component={Contact} />
       <Route path="/order" exact component={Order} />
+      <Route path="/cart" exact component={Cart} />
      
       
     </Switch>

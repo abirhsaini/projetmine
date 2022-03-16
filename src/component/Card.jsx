@@ -1,9 +1,18 @@
 import React from 'react';
 import "../style/tout.scss"
-import  {useCart}  from 'react-use-cart';
+
+import { useSelector,useDispatch } from 'react-redux';
+import {addCart} from "../redux/action"
+
 
 const Card = (props) => {
-    const { addItem }= useCart();
+    
+    
+        const dispatch =useDispatch();
+        const addProduct =(product)=>{
+          dispatch(addCart(product));
+    
+        }
     
     return (
         <>
@@ -17,12 +26,13 @@ const Card = (props) => {
                     <h5 class="card-title">{props.name}</h5>
                     <p class="card-text">{props.text}</p>
                     <p   class="card-text"> {props.price} $</p>
-                    <button class="btn btn-primary" onClick={() => props.addItem}>Add to cart</button>
+                    <button class="btn btn-primary" onClick={() => addProduct(props.item)}>Add to cart</button>
                 </div>
             </div>
         </div>
         </>
     );
 };
+
 
 export default Card;
