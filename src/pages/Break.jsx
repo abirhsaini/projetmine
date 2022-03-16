@@ -8,6 +8,7 @@ import Footer from '../component/Footer';
 
 
 import "../style/tout.scss";
+import { NavLink } from 'react-bootstrap';
 
 
 
@@ -37,10 +38,6 @@ const Break =()=>{
             <Navigation />
             {cards}
             <br />
-
-            <a href="/cart"  > <div className='third' > go to your cart ({state.length})</div></a>
-           
-           
             
             <Footer />
         </div>
