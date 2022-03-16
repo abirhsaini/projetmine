@@ -1,0 +1,47 @@
+.book {
+    background-image: url("../assets/image/book.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.block1 {
+    padding: 100px;
+}
+
+label {
+    padding: 30px;
+    font-style: italic;
+    font-size: 30px;
+    color: rgba(70, 69, 69, 0.993);
+    border: 40px;
+}
+
+input {
+    border-radius: 50px;
+    width: 300px;
+    background-color: rgba(78, 46, 46, 0.884);
+    text-align: center;
+    height: 70px;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+.table66 {
+    width: 300px;
+    height: 70px;
+    display: block;
+    margin: auto;
+    background-color: rgba(70, 69, 69, 0.993);
+    border-radius: 50px;
+    margin-top: 70px;
+    /* centrer le submit pour navigateur autre que ie8 */
+}
+
+.table66:hover {
+    background-color: aliceblue;
+    color: rgb(55, 55, 58);
+}

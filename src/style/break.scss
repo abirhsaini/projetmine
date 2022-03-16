@@ -1,0 +1,39 @@
+.card {
+    width: 18em;
+}
+
+.break {
+    display: inline-flex;
+    margin: 55px;
+}
+
+.discover {
+    background-image: url("../assets/image/images.jfif");
+    position: relative;
+    font-family: 'Josefin Sans', cursive;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 100px;
+    line-height: 650px;
+    vertical-align: middle;
+    height: 100vh;
+}
+
+.third {
+    color: aliceblue;
+    border-radius: 40px;
+    text-align: center;
+    height: 50px;
+    margin: 0 auto;
+    background-color: rgb(87, 84, 84);
+    width: 400px;
+    margin-bottom: 50px;
+    align-items: flex-start;
+}
+
+.third:hover {
+    background-color: aliceblue;
+    color: rgb(55, 55, 58);
+    text-decoration: none;
+}

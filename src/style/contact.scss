@@ -1,0 +1,68 @@
+.brk {
+    font-family: 'Zen Tokyo Zoo';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 90px;
+    line-height: 50px;
+    text-align: left;
+    margin-top: 70px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    padding-right: 200px;
+    padding-left: 0px;
+    color: black;
+}
+
+.det:first-child {
+    margin-left: 0px;
+}
+
+.det:last-child {
+    margin-right: 0px;
+    width: 70px;
+}
+
+.fa {
+    size: 50px;
+}
+
+.det {
+    background-color: #aaa9a1;
+    size: 50px;
+    font-size: 25px;
+    color: rgb(54, 54, 54);
+    padding-right: 140px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+    margin-top: 100px;
+}
+
+strong {
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.content-header {
+    font-family: 'Oleo Script', cursive;
+    color: #fcc500;
+    font-size: 45px;
+}
+
+.section-content {
+    text-align: center;
+}
+
+.contact-section .col-md-6 {
+    width: 50%;
+}
+
+label {
+    font-size: 1.3em;
+    line-height: 1em;
+    font-weight: normal;
+}
