@@ -2,7 +2,8 @@ import React from 'react';
 import Navigation from '../component/navigation';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteCart} from "../redux/action/index"
-import { NavLink } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+
 
 const Cart = () => { 
 
@@ -50,7 +51,7 @@ const button = () => {
     return(
         <div className="container">
             <div className="row">
-                <NavLink to="/checkout" className="btn btn-outline-primary mb-5 w-25 mx-auto">Proceed To checkout</NavLink>
+                <NavLink  to="/checkout" className="btn btn-outline-secondary mb-5 w-25 mx-auto">Proceed To checkout</NavLink>
      
             </div>
         </div>

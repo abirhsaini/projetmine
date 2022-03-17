@@ -15,6 +15,7 @@ import { CartProvider} from "react-use-cart";
 import {BrowserRouter ,Switch ,Route} from "react-router-dom";
 import "./style/tout.scss"
 import Cart from "./pages/cart";
+import Checkoutt from "./pages/checkoutt";
 
 
 
@@ -37,6 +38,7 @@ function App() {
       <Route path="/Contact" exact component={Contact} />
       <Route path="/order" exact component={Order} />
       <Route path="/cart" exact component={Cart} />
+      <Route path="/checkout" exact component={Checkoutt} />
      
       
     </Switch>
