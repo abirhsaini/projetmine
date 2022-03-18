@@ -13,7 +13,7 @@ const db = mysql.createConnection({
     host: "localhost",
     database: "login"
 })
-app.post('/chekout', (req, res) => {
+app.post('/checkout', (req, res) => {
 
     const firstname = req.body.firstname;
     const lastname = req.body.lastname;
@@ -22,9 +22,10 @@ app.post('/chekout', (req, res) => {
     const adress2 = req.body.adress2;
 
 
-    db.query("INSERT INTO USERS (firstname, lastname, email, adress1,adress2) VALUES (?,?,?,?,?)", [firstname, lastname, email, adress1, adress2],
+    db.query("INSERT INTO USER (user_name, user_lastname, email,adress1,adress2) VALUES (?,?,?,?,?)", [firstname, lastname, email, adress1, adress2],
         (err, result) => {
             console.log(err)
+            res.send("jij")
 
         }
     )

@@ -7,7 +7,8 @@ import { useState } from 'react';
 
 const Checkoutt = () => {
 const register =()=>{
-    axios.post('http://localhost:3000/checkout',{
+    console.log(firstname)
+    axios.post('http://localhost:3001/checkout',{
     firstname:firstname,
     lastname:lastname,
     email:email,
@@ -68,7 +69,7 @@ const register =()=>{
             </div>
             <div className="col-md-7 col-lg-8">
                 <h4 className="mb-3">Billing address</h4>
-                <form className="needs-validation" novalidate="">
+                <form className="needs-validation" noValidate="">
                     <div className="row g-3">
                         <div className="col-sm-6">
                             <label htmlFor="firstName" className="form-label" >First name</label>
@@ -217,7 +218,7 @@ const register =()=>{
 
                     <hr className="my-4" />
 
-                    <button className="w-100 btn btn-primary btn-lg" type="submit" onClick={register}>Continue to checkout</button>
+                    <button className="w-100 btn btn-primary btn-lg" type="button" onClick={register}>Continue to checkout</button>
                 </form>
             </div>
         </div>
