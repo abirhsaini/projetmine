@@ -36,7 +36,7 @@ const Menu = () => {
                             <img width="200px" height="200px" className='imagechef' src={require("../assets/image/HummusBowl-65a0050.jpg")} />
                             <br />
                             
-                                <Link to="/lunch" > <button type="button"  className='second' class="btn btn-secondary">Lunch</button></Link>
+                                <Link to="/lunch" > <button type="button"  className='second' >Lunch</button></Link>
                            
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <hr />
@@ -45,7 +45,7 @@ const Menu = () => {
 
                             <img width="200px" height="200px" className='imagechef' src={require("../assets/image/a.jpg")} alt="" />
                             <br />
-                                <Link to="/dinner"    > <button type="button"className='second'  class="btn btn-secondary" >dinner</button></Link>
+                                <Link to="/dinner"    > <button type="button" className='second'  >dinner</button></Link>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <hr />

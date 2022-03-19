@@ -1,11 +1,14 @@
 import React , { useState } from 'react';
 import{ init } from '@emailjs/browser';
 import "../style/tout.scss";
-init("user_VMZRY92tzhFdreGcj3veP");
+
+import axios from 'axios';
+
 
 
 function Input(props){
 
+  
 
     const [name, setName] = useState("");
     const [date1, setDate] = useState("");
@@ -49,7 +52,16 @@ function Bbb(e) {
           personne1,
         });
       };
-
+      console.log(name)
+      axios.post('http://localhost:3001/reservation',{
+      name:name,
+      date1:date1,
+      email:email1,
+      time1:time1,
+      personne1:personne1,
+      number1:number1
+  }
+      )
         
     }
 
